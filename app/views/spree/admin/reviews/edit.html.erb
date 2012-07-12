@@ -1,8 +1,13 @@
 <% render 'spree/admin/shared/product_sub_menu' %>
-<h1><%= t(:editing_review_for) %> <%= link_to @review.product.name, product_path(@review.product) %></h1>
-<h2><%= content_tag(:h2, @review.title) unless @review.title.blank? %></h2>
+<h1><%= t(:editing_review_for_html, :link => link_to(@review.product.name, product_path(@review.product))) %></h1>
 
-<%= content_tag(:p, simple_format(@review.review)) %>
+<% unless @review.title.blank? %>
+<h2><%= @review.title %></h2>
+<% end %>
+
+<p>
+<%= simple_format(@review.review) %>
+</p>
 
 <h2><%= t(:edited_version) %></h2>
 
