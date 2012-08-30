@@ -26,6 +26,7 @@ en:
   edited_version: 'Edited version'
   editing_review_for: 'Editing review for'
   error_approve_review: Error approving review
+  error_no_product: The reviewed product doesn't exist anymore
   feedback: Feedback
   feedback_review_for: "Review: '%{review}'"
   for: for
