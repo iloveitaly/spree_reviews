@@ -18,7 +18,7 @@ class Spree::ReviewsController < Spree::BaseController
 
     @review = Spree::Review.new(params[:review])
     @review.product = @product
-    @review.user = current_user if user_signed_in?
+    @review.user = spree_current_user if user_signed_in?
     @review.ip_address = request.remote_ip
 
     authorize! :create, @review

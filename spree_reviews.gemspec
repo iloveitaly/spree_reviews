@@ -14,6 +14,11 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 1.1'
+  s.add_dependency 'spree_core', '~> 1.2'
   s.add_dependency 'honeypot-captcha', '>= 0.0.2'
+
+  s.add_development_dependency 'factory_girl_rails', '~> 1.7'
+  s.add_development_dependency 'faker'
+  s.add_development_dependency 'rspec-rails', '~> 2.8'
+  s.add_development_dependency 'sqlite3'
 end
