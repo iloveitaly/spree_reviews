@@ -14,6 +14,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency('spree_core', '~> 1.1')
+  s.add_dependency 'spree_core', '~> 1.1'
   s.add_dependency 'honeypot-captcha', '>= 0.0.2'
 end
