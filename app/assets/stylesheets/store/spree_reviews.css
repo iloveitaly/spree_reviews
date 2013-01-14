@@ -33,7 +33,7 @@
 div.rating-cancel, div.star-rating {
   float: left;
   width: 17px;
-  height: 15px;
+  height: 16px;
   text-indent: -999em;
   cursor: pointer;
   display: block;
@@ -42,7 +42,7 @@ div.rating-cancel, div.star-rating {
 }
 
 div.rating-cancel, div.rating-cancel a {
-  background: transparent url('/assets/store/reviews/delete.gif') no-repeat scroll 0 -16px;
+  background: transparent url('/assets/store/reviews/delete.gif') no-repeat scroll 0 -1px;
 }
 
 div.star-rating, div.star-rating a {
@@ -58,11 +58,11 @@ div.rating-cancel a, div.star-rating a {
 }
 
 div.star-rating-on a {
-  background-position: 0 -30px !important
+  background-position: 0 -32px !important
 }
 
 div.star-rating-hover a {
-  background-position: 0 -30px
+  background-position: 0 -32px
 }
 
 /* Read Only CSS */
