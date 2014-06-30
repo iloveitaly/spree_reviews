@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   #s.description = 'Add (optional) gem description here'
   s.required_ruby_version = '>= 1.8.7'
 
-  s.homepage          = 'https://github.com/spree/spree-reviews/'
+  s.homepage      = 'https://github.com/spree/spree-reviews/'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 1.3'
+  s.add_dependency 'honeypot-captcha', '>= 0.0.2'
 
   s.add_development_dependency 'ffaker'
   s.add_development_dependency 'capybara', '~> 2.0.2'
